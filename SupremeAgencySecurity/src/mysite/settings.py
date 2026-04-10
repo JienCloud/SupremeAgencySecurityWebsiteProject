@@ -34,7 +34,8 @@ INSTALLED_APPS = [
 
     #my apps
     'personal',
-
+    'account',
+    
     #django apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -79,8 +80,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'supreme_db',
+        'USER': 'postgres',
+        'PASSWORD': 'Owencadiz098',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -115,7 +120,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+AUTH_USER_MODEL = 'account.CustomUser'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 

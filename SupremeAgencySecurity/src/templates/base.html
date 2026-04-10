@@ -2,27 +2,110 @@
 <html lang="en">
 
 <head>
-
-    <title>Django Website Project</title>
     <meta charset="UTF-8">
-    <div style="border: 2px solid #000000">
-    <h1>SupremeAgencySecurity</h1>
-    </div>
+    <title>Supreme Agency Security</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+
+        header, footer {
+            background-color: #417690;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #417690;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #305a6e;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+        }
+
+        .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
 
-{% block content %}
+<header>
+    <h1>SupremeAgencySecurity</h1>
+</header>
 
-{% endblock content %}
+<div class="container">
+    <div style="border: 2px #000;">
+    <h1>Django File Structure</h1>
+    <h2>manage.py</h2>
+    <p>Main command file used to run the server, create apps, and manage the project.</p>
+
+    <h2>mysite</h2>
+    <p>The main project folder created by Django.</p>
+
+    <h2>setting.py</h2>
+    <p>Stores project settings like installed apps, database, and templates.</p>
+
+    <h2>urls.py</h2>
+    <p>Controls which URL goes to which view.</p>
+
+    <h2>personals and templates</h2>
+    <p> - Your app folder where you write your own code.</p>
+    <p> - Where HTML files go if you want to make webpages.</p>
+
+    <h2>views.py</h2>
+    <p>Contains functions like this one that decide what to show to the user.</p>
+
+    <h2>models.py</h2>
+    <p>Used to create database tables and data structure.</p>
+
+    <h2>In short:</h2>
+    <p> URL -> View -> Response</p>
+
+</div>
+</div>
+
+<footer>
+    <h3>Cadiz-Cruz-Guiyab</h3>
+    <p>Tatlong Pogi Na Gumawa Ng Website</p>
+</footer>
 
 </body>
 
-<footer>
-    <div style="border: 2px solid #000000">
-    <h3>Cadiz-Cruz-Guiyab</h3>
-    <p>Tatlong pogi na gumawa ng website</p>
-    </div>
-</footer>
 </html>
